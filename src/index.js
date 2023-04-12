@@ -7,7 +7,7 @@
  *
  * Learn more at https://developers.cloudflare.com/workers/
  */
-
+import template from "./template"
 addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
 });
@@ -16,8 +16,11 @@ addEventListener("fetch", (event) => {
  * Respond with hello worker text
  * @param {Request} request
  */
+
 async function handleRequest(request) {
-  return new Response("Hello World!", {
-    headers: { "Content-Type": "text/plain" },
+  request.cf
+	return new Response(template(request.cf), {
+    headers: { "Content-Type": "text/html" },
   });
 }
+

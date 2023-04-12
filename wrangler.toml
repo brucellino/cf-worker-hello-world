@@ -1,3 +1,8 @@
 name = "hello-world"
+type = "webpack"
 main = "src/index.js"
 compatibility_date = "2023-04-12"
+account_id = "beb61125927ff6f81b508dec6fdfdfa2"
+workers_dev = true
+zone_id = ""
+route = ""
