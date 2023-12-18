@@ -2,7 +2,7 @@
   "name": "hello-world",
   "version": "1.0.0",
   "devDependencies": {
-    "wrangler": "3.17.1"
+    "wrangler": "3.21.0"
   },
   "private": true,
   "scripts": {
